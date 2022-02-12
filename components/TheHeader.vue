@@ -1,7 +1,9 @@
 <template>
   <header class="header">
     <div class="container">
-      <img width="98" src="/abaco_logo_light.png" >
+      <NuxtLink to="/">
+        <img width="98" src="/abaco_logo_light.png" >
+      </NuxtLink>
       <ul>
         <li>Inicio</li>
         <li>Nosotros</li>

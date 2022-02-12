@@ -1,16 +1,18 @@
 <template>
   <footer class="footer">
-    <p>
+    <div class="container">
+      <p>
       Sobre ABACO. Somos un equipo de profesionales que promovemos una cultura de
       efectividad en empresas y queremos apoyarlos.
-    </p>
-    <p>
+      </p>
+      <p>
       Edificio Kakau, Camino de oriente
       piso 8 Modulo A-801<br />
       +505 8810-2929<br />
       abaco@abaco.com.ni
-    </p>
-    <img width="98px" src="/abaco_logo_white.png" alt="Logo blanco.">
+      </p>
+      <img width="98px" src="/abaco_logo_white.png" alt="Logo blanco.">
+    </div>
   </footer>
 </template>
 <style>
