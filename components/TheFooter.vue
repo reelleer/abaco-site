@@ -11,7 +11,7 @@
       +505 8810-2929<br />
       abaco@abaco.com.ni
       </p>
-      <img width="98px" src="/abaco_logo_white.png" alt="Logo blanco.">
+      <AppLogo color="white" />
     </div>
   </footer>
 </template>

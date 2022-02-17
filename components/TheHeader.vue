@@ -1,9 +1,7 @@
 <template>
   <header class="header">
     <div class="container">
-      <NuxtLink to="/" class="header__logo">
-        <img height="32px" src="/abaco_logo_light.png" alt="Logo de ABACO">
-      </NuxtLink>
+      <AppLogo color="light" />
       <ul class="header__menu">
         <li>Inicio</li>
         <li>Nosotros</li>
@@ -29,10 +27,6 @@
   justify-content: space-between;
   padding-bottom: var(--calc-padding-top-bottom);
   padding-top: var(--calc-padding-top-bottom);
-}
-
-.header__logo {
-  line-height: 0;
 }
 
 .header__menu {

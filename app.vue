@@ -1,11 +1,11 @@
 <template>
-  <TheHeader />
+  <TheHeader v-once />
     <NuxtLayout>
       <main>
         <NuxtPage />
       </main>
     </NuxtLayout>
-  <TheFooter />
+  <TheFooter v-once />
 </template>
 <script setup>
 useMeta({
