@@ -4,6 +4,7 @@
 @import "typography.css";
 @import "layout.css";
 
+.debug,
 .debug * {
   outline: var(--outline);
 }
