@@ -13,7 +13,10 @@ useMeta({
     {rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png'},
     {rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png'}
   ],
-  title: "ABACO"
+  title: "ABACO",
+  htmlAttrs: {
+    lang: "es-ni"
+  }
 })
 </script>
 <style>
