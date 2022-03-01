@@ -1,5 +1,5 @@
 <template>
-  <svg width="16" height="16" fill="currentColor">
+  <svg class="icon" width="16" height="16" fill="currentColor">
     <use :href="nameRef" />
   </svg>
 </template>

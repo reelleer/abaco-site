@@ -5,7 +5,7 @@
       Sobre ABACO. Somos un equipo de profesionales que promovemos una cultura de
       efectividad en empresas y queremos apoyarlos.
       </p>
-      <ul>
+      <ul class="list-icon">
         <li>
           <AppIcon name="geo-alt" /> Edificio Kakau, Camino de oriente piso 8
           Modulo A-801
