@@ -1,21 +1,21 @@
 <template>
   <svg width="16" height="16" fill="currentColor">
-    <use v-bind="attrs" />
+    <use :href="nameRef" />
   </svg>
 </template>
 <script setup>
-import { ref, computed } from "vue"
+import { ref, watchEffect } from "vue"
 
 const props = defineProps({
   name: {
     type: String,
     required: true,
     validator: (value) => 
-      ["envelope", "geo-alt", "telephone", "list"].includes(value)
+      ["envelope", "geo-alt", "telephone", "list", "x-lg"].includes(value)
   }
 })
 
-const name = ref(props.name)
+const nameRef = ref("")
 
-const attrs = computed(() => { return { href: `#${name.value}` } }) 
+watchEffect(() => nameRef.value = `#${props.name}`) 
 </script>
