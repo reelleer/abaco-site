@@ -17,13 +17,19 @@
           <AppIcon name="envelope" /> abaco@abaco.com.ni
         </li>
       </ul>
-      <AppLogo color="white" />
+      <div class="footer__logo">
+        <AppLogo color="white" />
+      </div>
     </div>
   </footer>
 </template>
 <style>
 .footer {
   background-color: var(--background-color-alternate);
+}
+
+.footer__logo {
+  text-align: center;
 }
 </style>
 

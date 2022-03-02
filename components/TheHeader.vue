@@ -45,6 +45,7 @@ const toggleMenu = () => isOpen.value = !isOpen.value
   position: absolute;
   top: 54px;
   width: 100%;
+  z-index: 100;
 }
 
 .header__mobile-icon {
