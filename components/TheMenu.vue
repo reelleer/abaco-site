@@ -26,6 +26,7 @@ const links = [
 }
 
 .navbar__list {
+  font-family: Poppins, sans-serif;
   list-style: none;
   padding-left: 1rem;
   font-size: 1.5rem;
@@ -40,5 +41,25 @@ const links = [
 
 .navbar__list-item .router-link-active {
   border-top: 0.25rem solid var(--background-color-emphasis);
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar__list-item {
+    display: inline;
+    padding: 0 0;
+  }
+
+  .navbar__list-item:nth-child(n+1):not(:last-child){
+    padding-right: 1rem;
+  }
+
+  .navbar {
+    height: auto;
+  }
 }
 </style>

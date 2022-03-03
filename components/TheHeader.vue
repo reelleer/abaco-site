@@ -53,4 +53,18 @@ const toggleMenu = () => isOpen.value = !isOpen.value
   width: 32px;
   height: 32px;
 }
+
+@media only screen and (min-width: 768px) {
+  .header {
+    height: 5.125rem;
+  }
+
+  .header__menu {
+    display: block;
+  }
+
+  .header__mobile-icon {
+    display: none;
+  }
+}
 </style>
