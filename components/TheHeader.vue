@@ -59,6 +59,10 @@ const toggleMenu = () => isOpen.value = !isOpen.value
     height: 5.125rem;
   }
 
+  .header .logo__image {
+    height: 3.5rem
+  }
+
   .header__menu {
     display: block;
   }

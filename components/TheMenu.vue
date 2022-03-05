@@ -26,7 +26,8 @@ const links = [
 }
 
 .navbar__list {
-  font-family: Poppins, sans-serif;
+  --shadow-height: -0.25rem;
+  font-family: var(--font-titles);
   list-style: none;
   padding-left: 1rem;
   font-size: 1.5rem;
@@ -40,11 +41,13 @@ const links = [
 }
 
 .navbar__list-item .router-link-active {
-  border-top: 0.25rem solid var(--background-color-emphasis);
+  /*border-top: 0.25rem solid var(--background-color-emphasis);*/
+  box-shadow: 0 var(--shadow-height) var(--background-color-emphasis);
 }
 
 @media only screen and (min-width: 768px) {
   .navbar__list {
+    --shadow-height: -0.5rem;
     margin: 0;
     padding: 0;
   }
