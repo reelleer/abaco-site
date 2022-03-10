@@ -9,3 +9,12 @@ html {
 h1, h2, h3 {
   font-family: var(--font-titles);
 }
+
+.text-white {
+  color: white;
+}
+
+.text-emphasis {
+  color: var(--background-color-emphasis);
+  font-weight: bold;
+}
