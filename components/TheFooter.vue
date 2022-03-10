@@ -1,9 +1,12 @@
 <template>
   <footer class="footer">
     <div class="container">
-      <div>
+      <div class="text-white">
         <p>
-        Sobre ABACO. Somos un equipo de profesionales que promovemos una cultura de
+        Sobre <b class="text-emphasis">ABACO</b>.
+        </p>
+        <p>
+        Somos un equipo de profesionales que promovemos una cultura de
         efectividad en empresas y queremos apoyarlos.
         </p>
         <ul class="list-icon">
@@ -38,6 +41,7 @@
   .footer .container {
     display: flex;
     gap: 1rem;
+    justify-content: space-between;
   }
 
   .footer__logo {
