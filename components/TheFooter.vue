@@ -15,10 +15,14 @@
             Modulo A-801
           </li>
           <li>
-            <AppIcon name="telephone" /> +505 8810-2929<br />
+            <AppIcon name="telephone" /> 
+            <a class="text-white" href="tel:+50588102929">+505 8810-2929</a>
           </li>
           <li>
-            <AppIcon name="envelope" /> abaco@abaco.com.ni
+            <AppIcon name="envelope" /> 
+            <a class="text-white" href="mailto:abaco@abaco.com.ni">
+              abaco@abaco.com.ni
+            </a>
           </li>
         </ul>
       </div>
