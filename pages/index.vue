@@ -4,10 +4,7 @@
 			<h3>Este es el espacio para el Banner</h3>
 		</section>
 		<section>
-			<PagesIndexServices>
-
-			</PagesIndexServices>
-		
+    <PagesIndexServices></PagesIndexServices>
 		</section>
 		<section>
 			<div>

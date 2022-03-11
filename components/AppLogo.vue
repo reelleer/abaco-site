@@ -1,6 +1,6 @@
 <template>
   <NuxtLink to="/" class="logo">
-    <img height="32px" :src="logoPath" alt="Logo de ABACO">
+    <img class="logo__image" height="32px" :src="logoPath" alt="Logo de ABACO">
   </NuxtLink>
 </template>
 <script setup>

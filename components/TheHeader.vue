@@ -2,19 +2,25 @@
   <header class="header">
     <div class="container">
       <AppLogo color="light" />
-      <ul class="header__menu">
-        <li>Inicio</li>
-        <li>Nosotros</li>
-        <li>Servicios</li>
-        <li>Clientes</li>
-        <li>Contacto</li>
-      </ul>
-      <svg class="header__mobile-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-      </svg>
+      <TheMenu class="header__menu" :class="menuClass" />
+      <AppIcon
+        class="header__mobile-icon"
+        :name="iconName"
+        @click="toggleMenu"
+      />
     </div>
   </header>
 </template>
+<script setup>
+import { ref, computed } from "vue"
+
+const isOpen = ref(false)
+
+const menuClass = computed(() => isOpen.value ? "header__menu--display" : "")
+const iconName = computed(() => isOpen.value ? "x-lg" : "list")
+
+const toggleMenu = () => isOpen.value = !isOpen.value
+</script>
 <style>
 .header {
   background-color: var(--background-color);
@@ -37,10 +43,32 @@
   display: block;
   left: 0px;
   position: absolute;
-  top: 55px;
+  top: 54px;
+  width: 100%;
+  z-index: 100;
 }
 
 .header__mobile-icon {
   color: white;
+  width: 32px;
+  height: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    height: 5.125rem;
+  }
+
+  .header .logo__image {
+    height: 3.5rem
+  }
+
+  .header__menu {
+    display: block;
+  }
+
+  .header__mobile-icon {
+    display: none;
+  }
 }
 </style>

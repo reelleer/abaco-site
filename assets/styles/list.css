@@ -1,0 +1,16 @@
+.list-icon {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 2rem;
+}
+
+.list-icon li {
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.list-icon > li > .icon:first-child {
+  position: absolute;
+  left: -2rem;
+  list-style-position: outside;
+}
